@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
 <body>
-    
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php" method = "post">
+이름 : <input type = "text" name = "username"><br>
+</form> 
+
+<form>
+
+  <br>성별 :
+  <input type="radio" id="html" name="fav_language" value="MAN">
+  <label for="html">남성</label>
+  <input type="radio" id="css" name="fav_language" value="WOMAN">
+  <label for="css">여성</label><br>
+
+
+  <br>기숙사 거주 경험 :
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Indoor">
+  <label for="vehicle1"> 기숙사 거주 경험 있음</label>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Outdoor">
+  <label for="vehicle2"> 외부 거주 경험 있음</label><br>
+  
+  <br>전공 :
+  <select>
+    <option value="americano">전산심화</option>
+    <option value="caffe latte">전산1전공</option>
+    <option value="cafe au lait">전산2전공</option>
+  </select><br>
+
+  <br>
+  <label for="date">생년월일 :
+    <input type="date"
+           id="date"
+           max="2025-12-31"
+           min="2020-01-01">
+  </label>
+
+  
+  <p>소감문 작성 :</p>
+  <p><textarea cols="50" rows="5"></textarea></p>
+  <p><input type="submit" value="Submit"></p>
+
+  
+</form>
+
 </body>
 </html>

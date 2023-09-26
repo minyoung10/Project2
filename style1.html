@@ -4,8 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+    font: 100% Verdana;
+    margin: 20px;
+    line-height: 26px;
+}
+
+        h1, h2, h3 {
+            color: #4CAF50;
+            font-weight: bold;
+            margin: 0;
+            line-height: 50px;
+        }
+        .menuitem {
+            width: 165px;
+            float: left;
+            background-color: #555555;
+            color: #ffffff;
+            list-style-type: none;
+            margin: 4px;
+            padding: 4px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .menuitem:nth-child(3) {
+            background-color: #04AA6D; /* 초록색 */
+        }
+        .menuitem:hover {
+            background-color: #000000; /* 검은색 */
+        }
+        a {
+            color: #000000; /* 검은색 */
+        }
+        a:hover {
+            color: #4CAF50; /* 파란색 (마우스 오버 시) */
+        }
+        #sidebar {
+            background-color: #f1f1f1; /* 밝은 회색 배경색 */
+            padding-left: 10px;
+            border: 1px solid #d4d4d4; /* 진한 회색 밑줄 */
+            margin: 0 auto; /* 가운데 정렬을 위한 마진 설정 */
+        }
+        #bottom {
+            text-align: center;
+            padding: 10px;
+            font-size: 80%;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>안녕하세요</h1>
+    <div>
+        <h1> Welcome to 송민영's Homepage 22000374</h1>
+        <p>Use the menu to select different Stylesheets</p>
+    </div>
+    <div id="menubar">
+        <ul id="menulist">
+          <li class="menuitem">Stylesheet 1
+          <li class="menuitem">Stylesheet 2
+          <li class="menuitem">Stylesheet 3
+          <li class="menuitem">Stylesheet 4
+          <li class="menuitem">No Stylesheet
+        </ul>
+    </div>
+    <br>
+<br>
+<h1>Same Page Different Stylesheets</h1>
+<div>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</div>
+<a href="#"> Stylesheet1</a>
+,
+<a href="#"> Stylesheet2</a>
+,
+<a href="#"> Stylesheet3</a>
+,
+<a href="#"> Stylesheet4</a>
+.
+
+<h2>No Styles</h2>
+<div>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</div>
+<a href="#"> No Stylesheet.</a>    
+
+<br>
+<br>
+<div id="sidebar">
+    <h3>Side-Bar</h3>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+<div id="bottom">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+  </div>
 </body>
 </html>
